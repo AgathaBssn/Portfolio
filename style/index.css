@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600&family=Lato:wght@300;400&family=Oswald:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  max-width: 100%; }
+
+body {
+  background-color: #F8FFF8;
+  color: #000;
+  font-size: 1rem;
+  font-family: 'Lato', serif;
+  font-weight: 400; }
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 32px; }
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: block; }
+
+/*BUTTUN CONTACT*/
+.button-contact {
+  font-family: 'Lato', serif;
+  font-weight: normal;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  background-color: #FD7A00; }
+
+footer h3 {
+  font-family: 'Lato', serif;
+  font-weight: 300;
+  font-size: 14px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 96px; }
+  nav h3 {
+    font-weight: normal;
+    font-size: 24px; }
+  nav .accueil, nav .title, nav .nav-button {
+    display: flex;
+    align-items: center; }
+  nav .accueil {
+    font-family: 'Oswald', sans-serif;
+    padding: 6px 0;
+    gap: 24px; }
+  nav .nav-button {
+    gap: 24px; }
+    nav .nav-button .button-contact {
+      padding: 8px 16px;
+      font-size: 18px; }
+  nav #name {
+    color: #E84E01; }
+
+/*MAIN BODY*/
+.main {
+  text-align: center;
+  height: calc(100vh - 96px); }
+  .main section {
+    display: flex;
+    padding: 64px 0;
+    gap: 32px;
+    justify-content: center; }
+    .main section img {
+      width: 400px;
+      height: 400px; }
+    .main section .text_pres {
+      padding-top: 32px;
+      max-width: 468px;
+      gap: 16px;
+      text-align: left; }
+      .main section .text_pres h1 {
+        vertical-align: top;
+        font-family: 'Anton', serif;
+        font-size: 48px; }
+      .main section .text_pres p {
+        font-size: 24px; }
+      .main section .text_pres .button_pres {
+        vertical-align: top;
+        horiz-align: left;
+        padding-top: 48px;
+        display: flex;
+        gap: 16px; }
+        .main section .text_pres .button_pres .button-contact {
+          padding: 12px 16px;
+          font-size: 20px;
+          letter-spacing: 2px; }
+          .main section .text_pres .button_pres .button-contact:last-child {
+            background-color: #E5FBF2; }
+
+/* MAIN A PROPOS*/
+.main-propos {
+  text-align: center;
+  height: calc(100vh - 96px);
+  gap: 48px;
+  padding-top: 64px;
+  padding-bottom: 48px; }
+  .main-propos section {
+    width: 1024px;
+    margin: auto; }
+  .main-propos h2 {
+    font-family: 'Anton', serif; }
+  .main-propos .proposdemoi {
+    gap: 16px; }
+    .main-propos .proposdemoi div:last-child {
+      display: flex;
+      gap: 64px; }
+      .main-propos .proposdemoi div:last-child p {
+        font-family: 'Lato', serif;
+        font-size: 20px;
+        text-align: left; }
+    .main-propos .proposdemoi h2 {
+      font-size: 34px;
+      text-align: left; }
+    .main-propos .proposdemoi img {
+      height: 200px; }
+  .main-propos .competences-sec {
+    gap: 32px;
+    padding: 32px 0; }
+    .main-propos .competences-sec #title-main-comp {
+      text-align: left;
+      color: #E84E01;
+      font-size: 34px; }
+    .main-propos .competences-sec .group-competence {
+      padding-left: 32px;
+      display: flex;
+      justify-content: space-evenly; }
+      .main-propos .competences-sec .group-competence .competence {
+        gap: 16px; }
+        .main-propos .competences-sec .group-competence .competence .title-comp {
+          gap: 16px;
+          display: flex;
+          align-items: center; }
+          .main-propos .competences-sec .group-competence .competence .title-comp img {
+            height: 64px;
+            width: 64px; }
+          .main-propos .competences-sec .group-competence .competence .title-comp h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px; }
+
+/*MAIN CONTACT*/
+.main-contact {
+  padding: 64px 0; }
+  .main-contact h2 {
+    font-family: 'Anton', serif;
+    font-size: 48px;
+    text-align: center; }
+  .main-contact p {
+    font-size: 17px;
+    line-height: 140%;
+    width: 616px;
+    margin: 32px auto; }
+  .main-contact .form-main-box {
+    width: 616px;
+    margin: auto;
+    gap: 8px; }
+    .main-contact .form-main-box .form-box {
+      gap: 4px;
+      font-size: 18px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: bold; }
+    .main-contact .form-main-box .form-box-flex {
+      display: flex;
+      gap: 16px; }
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  padding: 16px 0; }
+  footer p {
+    gap: 2px; }
+  footer .valentin {
+    display: flex;
+    gap: 8px; }
+    footer .valentin a {
+      width: 16px;
+      height: 16px; }
+    footer .valentin img {
+      height: 9px; }
+
+/*# sourceMappingURL=index.css.map */
