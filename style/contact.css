@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600&family=Lato:wght@300;400&family=Oswald:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+}
+
+body {
+  background-color: #F8FFF8;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+}
+
+/*BUTTUN CONTACT*/
+.button-contact {
+  font-family: "Lato", serif;
+  font-weight: normal;
+  color: #000;
+  border: none;
+  border-radius: 2px;
+  background-color: #FD7A00;
+  padding: 8px 24px;
+}
+
+footer h3 {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/*MAIN CONTACT*/
+.main-contact {
+  min-height: calc(100vh - 144px);
+  padding: 64px 0;
+}
+.main-contact h2 {
+  font-family: "Anton", serif;
+  font-size: 48px;
+  text-align: center;
+}
+.main-contact p {
+  font-size: 17px;
+  line-height: 140%;
+  width: 616px;
+  margin: 32px auto;
+}
+.main-contact .form-main-box {
+  width: 616px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.main-contact .form-main-box .col-span-2 {
+  grid-column: span 2;
+}
+.main-contact .form-main-box .form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+.main-contact .form-main-box .form-box input, .main-contact .form-main-box .form-box textarea {
+  display: block;
+  width: 100%;
+  border: solid 1px #E84E01;
+  border-radius: 2px;
+  padding: 6px 10px;
+  background-color: transparent;
+}
+.main-contact .form-main-box .form-box textarea {
+  font-family: "Lato", serif;
+  resize: none;
+}
+.main-contact .form-main-box button {
+  margin-top: 24px;
+}
+
+/*# sourceMappingURL=contact.css.map */

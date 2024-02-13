@@ -1,0 +1,51 @@
+@import "global";
+/*MAIN CONTACT*/
+.main-contact{
+  min-height: calc(100vh - 144px);
+  padding: 64px 0;
+  h2{
+    font-family: 'Anton', serif;
+    font-size: 48px;
+    text-align: center;
+  }
+  p{
+    font-size: 17px;
+    line-height: 140%;
+    width: 616px;
+    margin: 32px auto ;
+
+  }
+  .form-main-box{
+    width: 616px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    .col-span-2{
+      grid-column: span 2;
+    }
+    .form-box{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 18px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: bold;
+      input, textarea{
+        display: block;
+        width: 100%;
+        border: solid 1px $accent;
+        border-radius: 2px;
+        padding: 6px 10px;
+        background-color: transparent;
+      }
+      textarea{
+        font-family: 'Lato', serif;
+        resize: none;
+      }
+    }
+    button{
+      margin-top: 24px;
+    }
+  }
+}

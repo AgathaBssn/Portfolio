@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600&family=Lato:wght@300;400&family=Oswald:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+}
+
+body {
+  background-color: #F8FFF8;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+}
+
+/*BUTTUN CONTACT*/
+.button-contact {
+  font-family: "Lato", serif;
+  font-weight: normal;
+  color: #000;
+  border: none;
+  border-radius: 2px;
+  background-color: #FD7A00;
+  padding: 8px 24px;
+}
+
+footer h3 {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 96px;
+  position: relative;
+}
+nav h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+nav .accueil, nav .title, nav .nav-button {
+  display: flex;
+  align-items: center;
+}
+nav .title {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+}
+nav .accueil {
+  font-family: "Oswald", sans-serif;
+  padding: 6px 0;
+  gap: 24px;
+}
+nav .accueil div {
+  width: 33%;
+}
+nav .nav-button {
+  gap: 24px;
+}
+nav #name {
+  color: #E84E01;
+}
+
+/*MAIN BODY*/
+.main {
+  text-align: center;
+  min-height: calc(100vh - 144px);
+}
+.main section {
+  display: flex;
+  padding: 64px 0;
+  gap: 32px;
+  justify-content: center;
+}
+.main section img {
+  width: 400px;
+  height: 400px;
+}
+.main section .text_pres {
+  padding-top: 32px;
+  max-width: 468px;
+  gap: 16px;
+  text-align: left;
+}
+.main section .text_pres h1 {
+  vertical-align: top;
+  font-family: "Anton", serif;
+  font-size: 48px;
+}
+.main section .text_pres p {
+  font-size: 24px;
+}
+.main section .text_pres .button_pres {
+  display: flex;
+  margin-top: 48px;
+  gap: 16px;
+}
+.main section .text_pres .button_pres a {
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+.main section .text_pres .button_pres :last-child {
+  background-color: #E5FBF2;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  padding: 16px 0;
+}
+footer p {
+  gap: 2px;
+}
+footer .valentin {
+  display: flex;
+  gap: 8px;
+}
+footer .valentin a {
+  width: 16px;
+  height: 16px;
+}
+footer .valentin img {
+  height: 9px;
+}
+
+/*# sourceMappingURL=index.css.map */

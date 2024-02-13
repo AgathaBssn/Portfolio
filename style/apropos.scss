@@ -1,0 +1,140 @@
+@import "global";
+/* MAIN A PROPOS*/
+
+.main-propos{
+  text-align: center;
+  min-height: calc(100vh - 144px);
+  padding-top: 64px;
+  padding-bottom: 48px;
+  section:nth-child(2){
+    background-color: $background-secondary;
+  } 
+  section{
+    margin: auto;
+    
+  }
+  h2{
+    font-family: 'Anton', serif;
+    margin-bottom: 16px;
+  }
+  .proposdemoi, .competences-sec, .experience{
+
+    margin: auto;
+  }
+  .proposdemoi{
+    margin-bottom: 48px;
+    width: 1024px;
+    div:last-child{
+      display: flex;
+      gap: 64px;
+
+      p{
+        font-family: 'Lato', serif;
+        font-size: 20px;
+        text-align: left;
+      }
+    }
+    h2{
+      font-size: 34px;
+      text-align:left;
+      
+    }
+    img{
+      height: 200px;
+    }
+  }
+  
+  .competences-sec{
+    gap: 32px;
+    padding: 32px 0;
+    width: 1024px;
+    
+    #title-main-comp{
+      text-align: left;
+      color: $background-secondary-accent;
+      font-size: 34px;
+    }
+    .group-competence{
+      padding-left: 32px;
+      display: flex;
+      justify-content: space-between;
+      .competence{
+        gap: 16px;
+        .title-comp{
+          gap: 16px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          img{
+            height: 64px;
+            width: 64px;
+          }
+          h2{
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+          }
+        }
+        .content-comp{
+          text-align: left;
+          padding-left: 16px;
+          p{
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+    }
+  }
+  .experience{
+    width: 1024px;
+    padding: 32px 0;
+    h2{
+      font-size: 34px;
+      text-align:left;
+    }
+    .experience-rub{
+      display: flex;
+      gap: 16px;
+      width: 500px;
+      .title{
+        width: 96px;
+        padding-top: 4px;
+        padding-left: 4px;
+        p{
+          font-family: 'Lato', serif;
+          font-size: 14px;
+          font-weight: lighter;
+          text-align: right;
+        }
+      }
+      .datetime{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .circle{
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        background-color: $background-secondary-accent;
+        border-radius: 50%;
+      }
+      .line{
+        width: 2px;
+        height: 100%;
+        background-color: $background-secondary-accent;
+      }
+      .place{
+        padding-bottom: 16px;
+        text-align: left;
+        h3{
+          font-family: 'Oswald', sans-serif;
+          font-size: 18px;
+        }
+        p{
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}

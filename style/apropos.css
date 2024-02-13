@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600&family=Lato:wght@300;400&family=Oswald:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+}
+
+body {
+  background-color: #F8FFF8;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+}
+
+/*BUTTUN CONTACT*/
+.button-contact {
+  font-family: "Lato", serif;
+  font-weight: normal;
+  color: #000;
+  border: none;
+  border-radius: 2px;
+  background-color: #FD7A00;
+  padding: 8px 24px;
+}
+
+footer h3 {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* MAIN A PROPOS*/
+.main-propos {
+  text-align: center;
+  min-height: calc(100vh - 144px);
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+.main-propos section:nth-child(2) {
+  background-color: #E5FAF1;
+}
+.main-propos section {
+  margin: auto;
+}
+.main-propos h2 {
+  font-family: "Anton", serif;
+  margin-bottom: 16px;
+}
+.main-propos .proposdemoi, .main-propos .competences-sec, .main-propos .experience {
+  margin: auto;
+}
+.main-propos .proposdemoi {
+  margin-bottom: 48px;
+  width: 1024px;
+}
+.main-propos .proposdemoi div:last-child {
+  display: flex;
+  gap: 64px;
+}
+.main-propos .proposdemoi div:last-child p {
+  font-family: "Lato", serif;
+  font-size: 20px;
+  text-align: left;
+}
+.main-propos .proposdemoi h2 {
+  font-size: 34px;
+  text-align: left;
+}
+.main-propos .proposdemoi img {
+  height: 200px;
+}
+.main-propos .competences-sec {
+  gap: 32px;
+  padding: 32px 0;
+  width: 1024px;
+}
+.main-propos .competences-sec #title-main-comp {
+  text-align: left;
+  color: #E84E01;
+  font-size: 34px;
+}
+.main-propos .competences-sec .group-competence {
+  padding-left: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-propos .competences-sec .group-competence .competence {
+  gap: 16px;
+}
+.main-propos .competences-sec .group-competence .competence .title-comp {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.main-propos .competences-sec .group-competence .competence .title-comp img {
+  height: 64px;
+  width: 64px;
+}
+.main-propos .competences-sec .group-competence .competence .title-comp h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+.main-propos .competences-sec .group-competence .competence .content-comp {
+  text-align: left;
+  padding-left: 16px;
+}
+.main-propos .competences-sec .group-competence .competence .content-comp p {
+  margin-bottom: 8px;
+}
+.main-propos .experience {
+  width: 1024px;
+  padding: 32px 0;
+}
+.main-propos .experience h2 {
+  font-size: 34px;
+  text-align: left;
+}
+.main-propos .experience .experience-rub {
+  display: flex;
+  gap: 16px;
+  width: 500px;
+}
+.main-propos .experience .experience-rub .title {
+  width: 96px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+.main-propos .experience .experience-rub .title p {
+  font-family: "Lato", serif;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: right;
+}
+.main-propos .experience .experience-rub .datetime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-propos .experience .experience-rub .circle {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #E84E01;
+  border-radius: 50%;
+}
+.main-propos .experience .experience-rub .line {
+  width: 2px;
+  height: 100%;
+  background-color: #E84E01;
+}
+.main-propos .experience .experience-rub .place {
+  padding-bottom: 16px;
+  text-align: left;
+}
+.main-propos .experience .experience-rub .place h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+.main-propos .experience .experience-rub .place p {
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=apropos.css.map */

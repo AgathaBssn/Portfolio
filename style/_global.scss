@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600&family=Lato:wght@300;400&family=Oswald:wght@400;500;700&display=swap');
+
+$background : #F8FFF8;
+$background-secondary : #E5FAF1;
+$background-secondary-accent : #E84E01;
+$text : #000;
+$text-secondary : #000000;
+$primary-button : #FD7A00;
+$second-button : #E5FBF2;
+$accent : #E84E01;
+$primary-button-text : #000;
+$secondary-button-test : #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body  {
+  max-width: 100%;
+}
+
+body {
+  background-color: $background;
+  color: $text;
+  font-size: 1rem;
+  font-family: 'Lato', serif;
+  font-weight: 400;
+}
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+}
+/*BUTTUN CONTACT*/
+.button-contact{
+  font-family: 'Lato', serif;
+  font-weight: normal;
+  color: $primary-button-text;
+  border: none;
+  border-radius: 2px;
+  background-color: $primary-button;
+  padding: 8px 24px;
+}
+
+footer {
+  h3 {
+    font-family: 'Lato', serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
