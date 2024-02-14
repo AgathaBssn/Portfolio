@@ -57,6 +57,10 @@ footer h3 {
   font-size: 48px;
   margin-bottom: 32px;
 }
+.main-projet h3 {
+  font-family: "Oswald", serif;
+  font-size: 28px;
+}
 .main-projet .projet-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -64,113 +68,85 @@ footer h3 {
   grid-gap: 16px;
   max-width: 616px;
   margin: 0 auto;
+  /*Component Box global*/
+  /*Component long*/
+  /*Component short global*/
+  /*Component short avec image*/
+  /*Component short sans image*/
+  /*Component content global*/
+  /*Component Github + lien Voir site*/
 }
-.main-projet .projet-wrapper .box-long {
-  grid-column: span 2/span 2;
-  grid-row: 1;
+.main-projet .projet-wrapper .box {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
   display: flex;
   justify-content: end;
 }
-.main-projet .projet-wrapper .box-long .box-long-content {
+.main-projet .projet-wrapper .box-long {
+  grid-column: span 2/span 2;
+  grid-row: 1;
+}
+.main-projet .projet-wrapper .box-long .long {
+  width: 50%;
+}
+.main-projet .projet-wrapper .box-short {
+  grid-column: span 1/span 1;
+  grid-row: 2;
+  height: 300px;
+  /*Component content short*/
+}
+.main-projet .projet-wrapper .box-short .short {
+  width: 300px;
+}
+.main-projet .projet-wrapper .box-short-img {
+  align-items: flex-end;
+}
+.main-projet .projet-wrapper .box-content {
+  background: rgba(229, 250, 241, 0.9);
+  backdrop-filter: blur(1px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
-  background: rgba(229, 250, 241, 0.9);
-  backdrop-filter: blur(1px);
   text-align: left;
   padding: 16px;
 }
-.main-projet .projet-wrapper .box-long .box-long-content .box-top .box-long-text {
-  padding-bottom: 8px;
-}
-.main-projet .projet-wrapper .box-long .box-long-content .box-top .box-long-text h3 {
-  font-family: "Oswald", serif;
-  font-size: 28px;
-}
-.main-projet .projet-wrapper .box-long .box-long-content .box-top .box-long-text .langage-text-box {
-  display: flex;
-  gap: 8px;
-  padding: 8px 0;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-}
-.main-projet .projet-wrapper .box-long .box-long-content .box-top .box-long-text .langage-text-box .langage-text {
-  border: solid 1px #E84E01;
-  padding: 4px 8px;
-  border-radius: 2px;
-}
-.main-projet .projet-wrapper .box-long .box-long-content .box-bottom {
-  display: flex;
-  gap: 8px;
-  justify-content: end;
-  align-items: center;
-}
-.main-projet .projet-wrapper .box-long .box-long-content .box-bottom .link-site {
-  background-color: #E5FBF2;
-  padding: 8px 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
-.main-projet .box-short {
-  grid-column: span 1/span 1;
-  grid-row: 2;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  height: 300px;
-  display: flex;
-  align-items: flex-end;
-}
-.main-projet .box-short .box-short-content {
-  background: rgba(229, 250, 241, 0.9);
-  backdrop-filter: blur(1px);
-  text-align: left;
-  padding: 16px;
+.main-projet .projet-wrapper .box-content .box-top {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 300px;
 }
-.main-projet .box-short .box-short-content h3 {
-  font-family: "Oswald", serif;
-  font-size: 28px;
-}
-.main-projet .box-short .box-short-content .langage-text-box {
+.main-projet .projet-wrapper .box-content .box-top .langage-text-box {
   display: flex;
   gap: 8px;
   font-family: "Inter", sans-serif;
   font-size: 12px;
 }
-.main-projet .box-short .box-short-content .langage-text-box .langage-text {
-  border: solid 1px #E84E01;
+.main-projet .projet-wrapper .box-content .box-top .langage-text-box .langage-text {
+  border: solid 2px #E84E01;
   padding: 4px 8px;
   border-radius: 2px;
 }
-.main-projet .box-short .box-short-content .box-bottom {
+.main-projet .projet-wrapper .box-bottom {
   display: flex;
   gap: 8px;
   padding-top: 8px;
   justify-content: end;
   align-items: center;
 }
-.main-projet .box-short .box-short-content .box-bottom .link-site {
+.main-projet .projet-wrapper .box-bottom .link-site {
   background-color: #E5FBF2;
   padding: 8px 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-.main-projet .box-short-text {
-  grid-column: span 1/span 1;
-  grid-row: 2;
-}
-.main-projet #ecowrap {
+
+/*Component image*/
+#ecowrap {
   background-image: url("../style/image/ecowrap.png");
 }
-.main-projet #cakephp {
+
+#cakephp {
   background-image: url("../style/image/cakephp.png");
 }
 

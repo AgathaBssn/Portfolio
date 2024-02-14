@@ -9,6 +9,10 @@
       font-size: 48px;
       margin-bottom: 32px;
     }
+    h3{
+      font-family: 'Oswald', serif;
+      font-size: 28px;
+    }
     .projet-wrapper{
       display : grid;
       grid-template-columns: repeat(2, 1fr);
@@ -16,117 +20,94 @@
       grid-gap: 16px;
       max-width: 616px;
       margin: 0 auto;
+      
+      /*Component Box global*/
+      .box{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        display: flex;
+        justify-content: end;
+      }
+      /*Component long*/
       .box-long{
         grid-column: span 2 / span 2;
         grid-row: 1;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left top;   
-        display: flex;
-        justify-content: end;
-        .box-long-content{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+        .long{
           width: 50%;
-          background: rgba($background-secondary, .9);
-          backdrop-filter: blur(1px);
-          text-align: left;
-          padding: 16px;
-          .box-top{
-            .box-long-text{
-              padding-bottom: 8px;
-              h3{
-                font-family: 'Oswald', serif;
-                font-size: 28px;
-              }
-              .langage-text-box {
-                display: flex;
-                gap: 8px;
-                padding: 8px 0;
-                font-family: "Inter", sans-serif;
-                font-size: 12px;
-                .langage-text {
-                  border: solid 1px $background-secondary-accent;
-                  padding: 4px 8px;
-                  border-radius: 2px;
-                }
-              }
-          }
-        }
-        .box-bottom{
-          display: flex;
-          gap: 8px;
-          justify-content: end;
-          align-items: center;
-          .link-site{
-            background-color: $second-button;
-            padding: 8px 4px;
-            box-shadow: 0 0 4px rgba(0,0,0,.25);
-            border-radius: 2px;
-          }
         }
       }
-    }
-  }
+      /*Component short global*/
       .box-short{
         grid-column: span 1 / span 1;
         grid-row: 2;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
         height: 300px;
-        display: flex;
-        align-items: flex-end;  
-        .box-short-content{
-            background: rgba($background-secondary, .9);
-            backdrop-filter: blur(1px);
-            text-align: left;
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            width: 300px;
-            h3{
-              font-family: 'Oswald', serif;
-              font-size: 28px;
-            }
-            .langage-text-box {
-              display: flex;
-              gap: 8px;
-              font-family: "Inter", sans-serif;
-              font-size: 12px;
-
-              .langage-text {
-                border: solid 1px $background-secondary-accent;
-                padding: 4px 8px;
-                border-radius: 2px;
-              }
-            }
-            .box-bottom{
-              display: flex;
-              gap: 8px;
-              padding-top: 8px;
-              justify-content: end;
-              align-items: center;
-              .link-site{
-                background-color: $second-button;
-                padding: 8px 4px;
-                box-shadow: 0 0 4px rgba(0,0,0,.25);
-                border-radius: 2px;
-              }
-            }
+        /*Component content short*/
+        .short{
+          width: 300px;
         }
+      }
+      /*Component short avec image*/
+      .box-short-img{
+        align-items: flex-end;  
+      }
+      /*Component short sans image*/
+      .box-text{
         
       }
-      .box-short-text{
-        grid-column: span 1 / span 1;
-        grid-row: 2;        
+            
+      /*Component content global*/
+      .box-content{
+        background: rgba($background-secondary, .9);
+        backdrop-filter: blur(1px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        padding: 16px;
+        .box-top{
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .langage-text-box {
+            display: flex;
+            gap: 8px;
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+
+            .langage-text {
+              border: solid 2px $background-secondary-accent;
+              padding: 4px 8px;
+              border-radius: 2px;
+            }
+          }
+        }
+        
+        
       }
+      /*Component Github + lien Voir site*/
+      .box-bottom{
+        display: flex;
+        gap: 8px;
+        padding-top: 8px;
+        justify-content: end;
+        align-items: center;
+        .link-site{
+          background-color: $second-button;
+          padding: 8px 4px;
+          box-shadow: 0 0 4px rgba(0,0,0,.25);
+          border-radius: 2px;
+        }
+      }
+     
+    }
+  }
+        
+    /*Component image*/
       #ecowrap{
         background-image: url("../style/image/ecowrap.png");
       }
       #cakephp{
         background-image: url("../style/image/cakephp.png");
       }
-    }
+    
