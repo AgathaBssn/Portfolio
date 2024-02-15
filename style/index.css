@@ -16,6 +16,9 @@ body {
   font-family: "Lato", serif;
   font-weight: 400;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 h1 {
   font-family: "Outfit", sans-serif;
