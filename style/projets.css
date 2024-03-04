@@ -139,9 +139,15 @@ footer h3 {
 }
 .main-projet .projet-wrapper .box-bottom .link-site {
   background-color: #E5FBF2;
-  padding: 8px 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  transition: all 0.3s;
+}
+.main-projet .projet-wrapper .box-bottom .link-site:hover {
+  background-color: #E84E01;
+}
+.main-projet .projet-wrapper .box-bottom .link-site a {
+  padding: 8px 4px;
 }
 
 /*Component image*/

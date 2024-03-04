@@ -94,9 +94,15 @@
         align-items: center;
         .link-site{
           background-color: $second-button;
-          padding: 8px 4px;
           box-shadow: 0 0 4px rgba(0,0,0,.25);
           border-radius: 2px;
+          transition: all .3s;
+          &:hover{
+            background-color: $accent;
+          }
+          a{
+            padding: 8px 4px;
+          }
         }
       }
      
