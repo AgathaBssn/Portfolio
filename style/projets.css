@@ -55,6 +55,12 @@ footer h3 {
   padding-top: 64px;
   padding-bottom: 48px;
 }
+@media screen and (max-width: 768px) {
+  .main-projet {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .main-projet h2 {
   font-family: "Anton", serif;
   font-size: 48px;
@@ -78,6 +84,15 @@ footer h3 {
   /*Component short sans image*/
   /*Component content global*/
   /*Component Github + lien Voir site*/
+}
+@media screen and (max-width: 768px) {
+  .main-projet .projet-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .main-projet .projet-wrapper .box {
   background-repeat: no-repeat;
@@ -114,6 +129,13 @@ footer h3 {
   text-align: left;
   padding: 16px;
 }
+@media screen and (max-width: 768px) {
+  .main-projet .projet-wrapper .box-content {
+    padding: 6px;
+    justify-content: start;
+    height: fit-content;
+  }
+}
 .main-projet .projet-wrapper .box-content .box-top {
   display: flex;
   flex-direction: column;
@@ -125,10 +147,20 @@ footer h3 {
   font-family: "Inter", sans-serif;
   font-size: 12px;
 }
+@media screen and (max-width: 768px) {
+  .main-projet .projet-wrapper .box-content .box-top .langage-text-box {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
 .main-projet .projet-wrapper .box-content .box-top .langage-text-box .langage-text {
   border: solid 2px #E84E01;
   padding: 4px 8px;
   border-radius: 2px;
+  width: fit-content;
+}
+.main-projet .projet-wrapper .box-content .box-top .langage-text-box .langage-text p {
+  width: fit-content;
 }
 .main-projet .projet-wrapper .box-bottom {
   display: flex;
