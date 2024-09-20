@@ -42,11 +42,6 @@ a {
   background-color: #FD7A00;
   padding: 8px 24px;
 }
-@media screen and (max-width: 768px) {
-  .button-contact {
-    display: none;
-  }
-}
 
 footer h3 {
   font-family: "Lato", serif;
@@ -64,13 +59,22 @@ nav {
 @media screen and (max-width: 1024px) {
   nav {
     padding: 0 16px;
-    justify-content: start;
     height: 58px;
   }
 }
 nav h3 {
   font-weight: normal;
   font-size: 24px;
+}
+@media screen and (max-width: 1024px) {
+  nav h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav h3 {
+    font-size: 18px;
+  }
 }
 nav .accueil, nav .title, nav .nav-button {
   display: flex;
@@ -103,6 +107,11 @@ nav .accueil div {
 }
 nav .nav-button {
   gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-button {
+    display: none;
+  }
 }
 nav #name {
   color: #E84E01;
@@ -171,8 +180,28 @@ nav #name {
   font-family: "Anton", serif;
   font-size: 48px;
 }
+@media screen and (max-width: 1024px) {
+  .main section .text_pres h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main section .text_pres h1 {
+    font-size: 36px;
+  }
+}
 .main section .text_pres p {
   font-size: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .main section .text_pres p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main section .text_pres p {
+    font-size: 18px;
+  }
 }
 .main section .text_pres .button_pres {
   display: flex;
@@ -194,12 +223,28 @@ footer {
   gap: 64px;
   padding: 16px 0;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    padding: 5px 0;
+  }
+}
 footer p {
   gap: 2px;
 }
 footer .valentin {
   display: flex;
   gap: 8px;
+}
+@media screen and (max-width: 768px) {
+  footer .valentin {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    padding: 5px 0;
+  }
 }
 footer .valentin a {
   width: 16px;

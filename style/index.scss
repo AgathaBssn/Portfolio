@@ -7,12 +7,17 @@ nav{
   position: relative;
   @media screen and (max-width: $breakpoint-tablet) {
     padding: 0 16px;
-    justify-content: start;
     height: 58px;
   }
   h3{
     font-weight: normal;
-    font-size: 24px;
+    font-size: $font-size-h3-desktop;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: $font-size-h3-tablet;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+      font-size: $font-size-h3-mobile;
+    }
   }
   .accueil, .title, .nav-button{
     display: flex;
@@ -42,7 +47,10 @@ nav{
   }
   .nav-button{
     gap: 24px;
-      }
+    @media screen and (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+  }
   #name{
     color: $accent;
   }
@@ -93,10 +101,22 @@ nav{
       h1{
         vertical-align: top;
         font-family: 'Anton', serif;
-        font-size: 48px;
+        font-size: $font-size-h1-desktop;
+        @media screen and (max-width: $breakpoint-tablet) {
+          font-size: $font-size-h1-tablet;
+        }
+        @media screen and (max-width: $breakpoint-mobile) {
+          font-size: $font-size-h1-mobile;
+        }
       }
       p{
-        font-size: 24px;
+        font-size: $font-size-h3-desktop;
+        @media screen and (max-width: $breakpoint-tablet) {
+          font-size: $font-size-h3-tablet;
+        }
+        @media screen and (max-width: $breakpoint-mobile) {
+          font-size: $font-size-h3-mobile;
+        }
       }
       .button_pres {
         display: flex;
@@ -121,12 +141,24 @@ footer{
   justify-content: center;
   gap: 64px;
   padding: 16px 0;
+  @media screen and (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    text-align: center;
+    gap : 5px;
+    padding : 5px 0;
+  }
   p{
     gap: 2px;
   }
   .valentin{
     display: flex;
     gap: 8px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+      text-align: center;
+      gap : 5px;
+      padding : 5px 0;
+    }
     a{
       width: 16px;
       height: 16px;

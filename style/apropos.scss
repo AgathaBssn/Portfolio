@@ -8,7 +8,10 @@
   padding-bottom: 48px;
   section:nth-child(2){
     background-color: $background-secondary;
-  } 
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    padding-top : 12px;
+  }
   section{
     margin: auto;
     
@@ -18,15 +21,30 @@
     margin-bottom: 16px;
   }
   .proposdemoi, .competences-sec, .experience{
-
     margin: auto;
   }
   .proposdemoi{
     margin-bottom: 48px;
-    width: 1024px;
+    max-width: 1024px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding: 0 24px;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+      max-width: 300px;
+      padding: 0 6px;
+      display: flex;
+      flex-direction: column;
+    }
     div:last-child{
       display: flex;
       gap: 64px;
+        @media screen and (max-width: $breakpoint-tablet) {
+            gap: 24px;
+        }
+      @media screen and (max-width: $breakpoint-mobile) {
+        gap: 0;
+        flex-direction: column;
+      }
 
       p{
         font-family: 'Lato', serif;
@@ -41,13 +59,16 @@
     }
     img{
       height: 200px;
+      @media screen and (max-width: $breakpoint-mobile) {
+        height: auto;
+      }
     }
   }
   
   .competences-sec{
     gap: 32px;
     padding: 32px 0;
-    width: 1024px;
+    max-width: 1024px;
     @media screen and (max-width: $breakpoint-tablet) {
       padding-left: 48px;
     }
@@ -55,12 +76,22 @@
     #title-main-comp{
       text-align: left;
       color: $background-secondary-accent;
-      font-size: 34px;
+      font-size: $font-size-h2-desktop;
+      @media screen and (max-width: $breakpoint-tablet) {
+        font-size: $font-size-h2-tablet;
+      }
+      @media screen and (max-width: $breakpoint-mobile) {
+        font-size: $font-size-h2-mobile;
+      }
     }
     .group-competence{
       padding-left: 32px;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        gap: 16px;
+      }
       .competence{
         gap: 16px;
         .title-comp{
@@ -74,12 +105,21 @@
           }
           h2{
             font-family: 'Oswald', sans-serif;
-            font-size: 24px;
+            font-size: $font-size-h3-desktop;
+            @media screen and (max-width: $breakpoint-tablet) {
+              font-size: $font-size-h3-tablet;
+            }
+            @media screen and (max-width: $breakpoint-mobile) {
+              font-size: $font-size-h3-mobile;
+            }
           }
         }
         .content-comp{
           text-align: left;
           padding-left: 16px;
+          @media screen and (max-width: $breakpoint-mobile) {
+            padding-left: 48px;
+          }
           p{
             margin-bottom: 8px;
           }
@@ -89,25 +129,40 @@
     }
   }
   .experience{
-    width: 1024px;
+    max-width: 1024px;
     padding: 32px 0;
+    @media screen and (max-width: $breakpoint-tablet){
+      padding: 32px 24px;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding: 32px 24px;
+    }
     h2{
-      font-size: 34px;
+      font-size: $font-size-h2-desktop;
       text-align:left;
+      @media screen and (max-width: $breakpoint-tablet) {
+        font-size: $font-size-h2-tablet;
+      }
+      @media screen and (max-width: $breakpoint-mobile) {
+          font-size: $font-size-h2-mobile;
+      }
     }
     .experience-rub{
       display: flex;
       gap: 16px;
-      width: 500px;
+      max-width: 500px;
       .title{
         width: 96px;
         padding-top: 4px;
         padding-left: 4px;
         p{
           font-family: 'Lato', serif;
-          font-size: 14px;
+          font-size: $font-size-text-tablet;
           font-weight: lighter;
           text-align: right;
+          @media screen and (max-width: $breakpoint-mobile) {
+            font-size: $font-size-text-mobile;
+          }
         }
       }
       .datetime{

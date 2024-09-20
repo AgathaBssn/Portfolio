@@ -32,9 +32,9 @@ $font-size-h2-desktop : 34px;
 $font-size-h2-mobile : 26px;
 $font-size-h2-tablet : 30px;
 
-$font-size-h1-desktop : 32px;
-$font-size-h1-mobile : 24px;
-$font-size-h1-tablet : 28px;
+$font-size-h1-desktop : 48px;
+$font-size-h1-mobile : 36px;
+$font-size-h1-tablet : 44px;
 * {
   margin: 0;
   padding: 0;
@@ -74,9 +74,6 @@ a {
   border-radius: 2px;
   background-color: $primary-button;
   padding: 8px 24px;
-  @media screen and (max-width: $breakpoint-mobile) {
-    display: none;
-  }
 }
 
 footer {

@@ -42,11 +42,6 @@ a {
   background-color: #FD7A00;
   padding: 8px 24px;
 }
-@media screen and (max-width: 768px) {
-  .button-contact {
-    display: none;
-  }
-}
 
 footer h3 {
   font-family: "Lato", serif;

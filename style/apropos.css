@@ -42,11 +42,6 @@ a {
   background-color: #FD7A00;
   padding: 8px 24px;
 }
-@media screen and (max-width: 768px) {
-  .button-contact {
-    display: none;
-  }
-}
 
 footer h3 {
   font-family: "Lato", serif;
@@ -64,6 +59,11 @@ footer h3 {
 .main-propos section:nth-child(2) {
   background-color: #E5FAF1;
 }
+@media screen and (max-width: 768px) {
+  .main-propos {
+    padding-top: 12px;
+  }
+}
 .main-propos section {
   margin: auto;
 }
@@ -76,11 +76,35 @@ footer h3 {
 }
 .main-propos .proposdemoi {
   margin-bottom: 48px;
-  width: 1024px;
+  max-width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+  .main-propos .proposdemoi {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-propos .proposdemoi {
+    max-width: 300px;
+    padding: 0 6px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main-propos .proposdemoi div:last-child {
   display: flex;
   gap: 64px;
+}
+@media screen and (max-width: 1024px) {
+  .main-propos .proposdemoi div:last-child {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-propos .proposdemoi div:last-child {
+    gap: 0;
+    flex-direction: column;
+  }
 }
 .main-propos .proposdemoi div:last-child p {
   font-family: "Lato", serif;
@@ -94,10 +118,15 @@ footer h3 {
 .main-propos .proposdemoi img {
   height: 200px;
 }
+@media screen and (max-width: 768px) {
+  .main-propos .proposdemoi img {
+    height: auto;
+  }
+}
 .main-propos .competences-sec {
   gap: 32px;
   padding: 32px 0;
-  width: 1024px;
+  max-width: 1024px;
 }
 @media screen and (max-width: 1024px) {
   .main-propos .competences-sec {
@@ -109,10 +138,26 @@ footer h3 {
   color: #E84E01;
   font-size: 34px;
 }
+@media screen and (max-width: 1024px) {
+  .main-propos .competences-sec #title-main-comp {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-propos .competences-sec #title-main-comp {
+    font-size: 26px;
+  }
+}
 .main-propos .competences-sec .group-competence {
   padding-left: 32px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .main-propos .competences-sec .group-competence {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 .main-propos .competences-sec .group-competence .competence {
   gap: 16px;
@@ -131,25 +176,60 @@ footer h3 {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .main-propos .competences-sec .group-competence .competence .title-comp h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-propos .competences-sec .group-competence .competence .title-comp h2 {
+    font-size: 18px;
+  }
+}
 .main-propos .competences-sec .group-competence .competence .content-comp {
   text-align: left;
   padding-left: 16px;
+}
+@media screen and (max-width: 768px) {
+  .main-propos .competences-sec .group-competence .competence .content-comp {
+    padding-left: 48px;
+  }
 }
 .main-propos .competences-sec .group-competence .competence .content-comp p {
   margin-bottom: 8px;
 }
 .main-propos .experience {
-  width: 1024px;
+  max-width: 1024px;
   padding: 32px 0;
+}
+@media screen and (max-width: 1024px) {
+  .main-propos .experience {
+    padding: 32px 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-propos .experience {
+    padding: 32px 24px;
+  }
 }
 .main-propos .experience h2 {
   font-size: 34px;
   text-align: left;
 }
+@media screen and (max-width: 1024px) {
+  .main-propos .experience h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-propos .experience h2 {
+    font-size: 26px;
+  }
+}
 .main-propos .experience .experience-rub {
   display: flex;
   gap: 16px;
-  width: 500px;
+  max-width: 500px;
 }
 .main-propos .experience .experience-rub .title {
   width: 96px;
@@ -161,6 +241,11 @@ footer h3 {
   font-size: 14px;
   font-weight: lighter;
   text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .main-propos .experience .experience-rub .title p {
+    font-size: 14px;
+  }
 }
 .main-propos .experience .experience-rub .datetime {
   display: flex;
