@@ -42,6 +42,11 @@ a {
   background-color: #FD7A00;
   padding: 8px 24px;
 }
+@media screen and (max-width: 768px) {
+  .button-contact {
+    display: none;
+  }
+}
 
 footer h3 {
   font-family: "Lato", serif;
@@ -93,6 +98,11 @@ footer h3 {
   gap: 32px;
   padding: 32px 0;
   width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+  .main-propos .competences-sec {
+    padding-left: 48px;
+  }
 }
 .main-propos .competences-sec #title-main-comp {
   text-align: left;

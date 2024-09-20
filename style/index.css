@@ -42,6 +42,11 @@ a {
   background-color: #FD7A00;
   padding: 8px 24px;
 }
+@media screen and (max-width: 768px) {
+  .button-contact {
+    display: none;
+  }
+}
 
 footer h3 {
   font-family: "Lato", serif;
@@ -55,6 +60,13 @@ nav {
   padding: 0 32px;
   height: 96px;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 0 16px;
+    justify-content: start;
+    height: 58px;
+  }
 }
 nav h3 {
   font-weight: normal;
@@ -70,10 +82,21 @@ nav .title {
   left: 50%;
   top: 50%;
 }
+@media screen and (max-width: 1024px) {
+  nav .title {
+    position: static;
+    transform: none;
+  }
+}
 nav .accueil {
   font-family: "Oswald", sans-serif;
   padding: 6px 0;
   gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  nav .accueil {
+    display: none;
+  }
 }
 nav .accueil div {
   width: 33%;
@@ -90,21 +113,58 @@ nav #name {
   text-align: center;
   min-height: calc(100vh - 144px);
 }
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+}
 .main section {
   display: flex;
   padding: 64px 0;
   gap: 32px;
   justify-content: center;
 }
+@media screen and (max-width: 1024px) {
+  .main section {
+    padding-left: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main section {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
 .main section img {
   width: 400px;
   height: 400px;
+}
+@media screen and (max-width: 1024px) {
+  .main section img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main section img {
+    width: 220px;
+    height: 220px;
+  }
 }
 .main section .text_pres {
   padding-top: 32px;
   max-width: 468px;
   gap: 16px;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .main section .text_pres {
+    max-width: 300px;
+    padding-top: 0;
+  }
 }
 .main section .text_pres h1 {
   vertical-align: top;

@@ -48,6 +48,9 @@
     gap: 32px;
     padding: 32px 0;
     width: 1024px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding-left: 48px;
+    }
     
     #title-main-comp{
       text-align: left;

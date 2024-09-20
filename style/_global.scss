@@ -11,6 +11,30 @@ $accent : #E84E01;
 $primary-button-text : #000;
 $secondary-button-test : #000;
 
+//breakpoints
+$breakpoint-mobile : 768px;
+$breakpoint-tablet : 1024px;
+$breakpoint-desktop : 1280px;
+//font-size
+$font-size-text-desktop : 16px;
+$font-size-text-mobile : 14px;
+$font-size-text-tablet : 14px;
+
+$font-size-h4-desktop : 22px;
+$font-size-h4-mobile : 16px;
+$font-size-h4-tablet : 20px;
+
+$font-size-h3-desktop : 24px;
+$font-size-h3-mobile : 18px;
+$font-size-h3-tablet : 22px;
+
+$font-size-h2-desktop : 34px;
+$font-size-h2-mobile : 26px;
+$font-size-h2-tablet : 30px;
+
+$font-size-h1-desktop : 32px;
+$font-size-h1-mobile : 24px;
+$font-size-h1-tablet : 28px;
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +74,9 @@ a {
   border-radius: 2px;
   background-color: $primary-button;
   padding: 8px 24px;
+  @media screen and (max-width: $breakpoint-mobile) {
+    display: none;
+  }
 }
 
 footer {
